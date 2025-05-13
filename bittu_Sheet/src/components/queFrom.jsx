@@ -12,7 +12,7 @@ export default function QueFrom() {
         e.preventDefault();
         const formData = new FormData(e.target)
         setLoading(true)
-        const res = await axios.post("http://localhost:5000/question",formData,
+        const res = await axios.post("https://bsheet.onrender.com/question",formData,
             {headers: { "Content-Type": "multipart/form-data" }
         });
         setLoading(false)

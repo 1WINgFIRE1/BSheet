@@ -7,7 +7,7 @@ export default function ReasoningquestionArea(){
   const [questions, setQuestions] = useState([])
   useEffect(()=>{
       async function fetchData(){
-          const response = await axios.get("http://localhost:5000/api/fetchquestion",{params: {topic:"reasoningtable"}})
+          const response = await axios.get("https://bsheet.onrender.com/api/fetchquestion",{params: {topic:"reasoningtable"}})
           setQuestions(response.data)
       }
       fetchData()

@@ -7,7 +7,7 @@ export default function GsquestionArea(){
   const [questions, setQuestions] = useState([])
   useEffect(()=>{
       async function fetchData(){
-          const response = await axios.get("http://localhost:5000/api/fetchquestion",{params: {topic:"gstable"}})
+          const response = await axios.get("https://bsheet.onrender.com/api/fetchquestion",{params: {topic:"gstable"}})
           setQuestions(response.data)
       }
       fetchData()
