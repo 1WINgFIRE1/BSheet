@@ -70,6 +70,7 @@ app.get("/api/fetchquestion",async(req,res)=>{
         res.status(200).json(result.rows);
 
     }catch(err){
+        console.log(err)
         res.status(500).json({error:"Error connecting to the database"});
     }
     
