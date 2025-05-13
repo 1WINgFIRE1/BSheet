@@ -57,6 +57,7 @@ app.post("/question",upload.fields([{name:"questionImg",maxCount:1},{name:"answe
         res.status(200).json(response);
 
      }catch(err){
+        console.log(err)
         res.status(500).json({error:"Error connecting to the database"});
     }
 })
@@ -70,7 +71,6 @@ app.get("/api/fetchquestion",async(req,res)=>{
         res.status(200).json(result.rows);
 
     }catch(err){
-        console.log(err)
         res.status(500).json({error:"Error connecting to the database"});
     }
     
