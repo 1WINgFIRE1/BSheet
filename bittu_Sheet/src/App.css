@@ -1,0 +1,16 @@
+@plugin "daisyui" {
+    themes: all;
+  }
+html{
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1; /* Fills the remaining space to push the footer down */
+}
