@@ -7,8 +7,6 @@
 
 Access the live application here: [https://bittusheet.vercel.app/](https://bittusheet.vercel.app/)
 
-## 📂 Repository
-
 ## 🚀 Features
 
 - **Three Core Sections**: GS, English, and Reasoning.
