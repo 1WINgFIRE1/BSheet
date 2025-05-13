@@ -6,6 +6,9 @@ import multer from "multer";
 import uploadImageToCloudinary from "./cloudinary/cloudinaryUploadFunction.js";
 import insertQuestion from "./database/insertionFunction.js";
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const app=express();
 
 // app.use(express.json());
@@ -57,6 +60,11 @@ app.post("/question",upload.fields([{name:"questionImg",maxCount:1},{name:"answe
         res.status(200).json(response);
 
      }catch(err){
+        console.log("Cloudinary Config:");
+        console.log("CLOUD_NAME:", process.env.CLOUD_NAME);
+        console.log("API_KEY:", process.env.API_KEY);
+        console.log("API_SECRET:", process.env.API_SECRET);
+
         console.log(err)
         res.status(500).json({error:"Error connecting to the database"});
     }
