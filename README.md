@@ -1,4 +1,4 @@
-```markdown
+
 # 🧾 Bittu Sheet
 
 **Bittu Sheet** is a full-stack web application designed to assist students in preparing for competitive exams. It allows users to submit and manage questions across three primary sections: **General Studies (GS)**, **English**, and **Reasoning**. The application supports image uploads for questions, providing a comprehensive platform for exam preparation.
@@ -38,4 +38,3 @@ Access the live application here: [https://bittusheet.vercel.app/](https://bittu
 ## 🤝 Contributing
   
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-'''
